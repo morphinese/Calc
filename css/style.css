@@ -15,19 +15,18 @@ aside {
 }
 html,
 body {
+    background-color: rgb(136, 136, 133);
     height: 100%;
     width: 100%;
     font-size: 100%;
     line-height: 1;
     font-size: 14px;
 }
-ul li {
-    list-style: none;
-}
-img {
-    vertical-align: top;
-}
 .wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -35,26 +34,40 @@ img {
 .title {
     padding: 30px 0px 30px 0px;
 }
-.inputs {
+.conatiner {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
     padding: 0px 0px 25px 0px;
+}
+.inputs{
+gap: 20px   ;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 .input {
     width: 250px;
-}
-.input:not(:last-child) {
-    margin: 0px 0px 15px 0px;
+    padding: 10px;
+    border-radius: 15px;
 }
 .select {
-    margin: 0px 0px 15px 0px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(198, 136, 136);
+    border-radius: 10px;
 }
 .btn {
+    cursor: pointer;
     padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(172, 21, 21);
 }
 .result {
     font-size: 24px;
     margin: 15px 0px;
-    color: red;
+    color: rgb(52, 57, 40);
 }
